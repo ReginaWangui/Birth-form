@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <Link href="index.js">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Birthday form</title>
 </head>
 <body>
@@ -15,26 +16,34 @@
             <p style="color:maroon; margin-left: 200px;">This form enables you to know your birth name by filling in the required details</p>
         </div>
        </div>
-    <form id="regForm" action="index.js" method="POST">
-        <div class="tab">Birthday name
-          <p><input placeholder="year" oninput="this.className = ''" name="year"></p>
-          <p><input placeholder="month" oninput="this.className = ''" name="month"></p>
-          <p><input placeholder="day" oninput="this.className = ''" name="day"></p>
-          <p><input placeholder="gender" oninput="this.className = ''" name="gender"></p>
-
-        </div>
-         <button onclick="myFunction()">Get A Name</button>
-        </form>
+   
        
-      
 
+
+        <div class="container">
+
+                <form id="regForm" action="index.js" method="POST" style="margin-left: 400px;" >
+                    <div class="tab">Birthday name
+                      <p><input placeholder="year" oninput="this.className = ''" name="year"></p>
+                      <p><input placeholder="month" oninput="this.className = ''" name="month"></p>
+                      <p><input placeholder="day" oninput="this.className = ''" name="day"></p>
+                      <p><input placeholder="gender" oninput="this.className = ''" name="gender"></p>
+            
+                    </div>
+                    <button onclick="myFunction()">Get Name</button>
+                    </form>
+              
+      
+        <div class="card-footer">
+            <p style="margin-left: 900px;">copyright2020</p>
+          </div>
 
 
 
 
 
     <script src="index.js"></script>
-    <
+    
 </div>
 </body>
 </html>
