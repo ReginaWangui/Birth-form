@@ -17,30 +17,28 @@
         </div>
        </div>
    
-       
-
-
-        <div class="container">
-
-                <form id="regForm" action="index.js" method="POST" style="margin-left: 400px;" >
-                    <div class="tab">Birthday name
-                      <p><input placeholder="year" oninput="this.className = ''" name="year"></p>
-                      <p><input placeholder="month" oninput="this.className = ''" name="month"></p>
-                      <p><input placeholder="day" oninput="this.className = ''" name="day"></p>
-                      <p><input placeholder="gender" oninput="this.className = ''" name="gender"></p>
-            
-                    </div>
-                    <button onclick="myFunction()">Get Name</button>
+                <div class="form">
+                <form id="regForm" action="index.js" method="POST" style="margin-left:300px; width: 30%;" >
+                    <div class="tab">
+                            <label class="text-white" for="year">Date:</label>
+                            <input type="date" name="date" class="form-control date-custom" placeholder="Enter Year of Date" id="date" required>
+                        </div>
+                        <label class="text-white" for="gender">Gender:</label>
+                        <select class="form-control mb-2 select-custom" id="genders">
+                            <option class="option-custom" value="other">Choose Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <button type="submit" class="btn btn-warning" onclick="submitFullNames()" style="background-color:maroon; color:mintcream; margin-bottom: 20px;">Get A Name</button>
                     </form>
+                    <div class="card-footer">
+                        <p style="margin-left: 900px;color: mintcream;">copyright2020</p>
+                      </div>
+                </div>
+        
               
       
-        <div class="card-footer">
-            <p style="margin-left: 900px;">copyright2020</p>
-          </div>
-
-
-
-
+       
 
     <script src="index.js"></script>
     
