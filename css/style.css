@@ -9,7 +9,7 @@ html,body{
 
 
 .container{
-    background-image: url("/img/background.png");
+    background-image: url("../img/background.png");
     background-size: cover;
     position: relative;
     align-items: center;
